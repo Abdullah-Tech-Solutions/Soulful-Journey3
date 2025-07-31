@@ -2,10 +2,196 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, user-scalable=yes">
     <title>Soulful Journey</title>
-    <!--LINKING CSS FILE-->
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Base styles (mobile-first) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        pre, h1, h2, h3, h4, p {
+            margin: 0;
+            padding: 0;
+            white-space: normal;
+        }
+        
+        .container {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .slideshow {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .content {
+            padding: 15px;
+        }
+        
+        .blinking-pill, .rect-btn {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            display: block;
+        }
+        
+        video {
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: 20px auto;
+        }
+        
+        /* Positioning adjustments for mobile */
+        h3[style*="-998px"] {
+            position: static;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Pink boxes */
+        div[style*="background-color: #fff0f7"] {
+            width: 100% !important;
+            padding: 15px !important;
+            box-sizing: border-box;
+        }
+        
+        /* Footer */
+        footer h2 {
+            text-align: center;
+            margin: 20px 0 !important;
+        }
+        
+        /* Media Queries */
+        @media only screen and (min-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .blinking-pill, .rect-btn {
+                width: 400px;
+                display: inline-block;
+            }
+            
+            .btn-container {
+                text-align: center;
+            }
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            
+            .slideshow {
+                width: 48%;
+            }
+            
+            .content {
+                width: 48%;
+            }
+            
+            h3[style*="-998px"] {
+                position: absolute;
+                top: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            .image-container {
+                margin-top: 20px !important;
+            }
+        }
+        
+        @media only screen and (min-width: 992px) {
+            .container {
+                padding: 30px;
+            }
+            
+            h3[style*="-998px"] {
+                position: relative;
+                top: -998px;
+                left: 150px;
+                transform: none;
+                text-align: left;
+            }
+            
+            .image-container {
+                margin-top: -950px !important;
+            }
+        }
+        
+        @media only screen and (min-width: 1200px) {
+            /* Large desktop styles */
+            div[style*="background-color: #fff0f7"] {
+                width: 90% !important;
+                margin: 20px auto !important;
+            }
+            
+            .patriotic-section {
+                text-align: center;
+            }
+            
+            video {
+                width: 70%;
+            }
+        }
+        
+        @media only screen and (max-width: 480px) {
+            /* Mobile-specific adjustments */
+            h1, h2, h3, h4, p {
+                font-size: 90% !important;
+            }
+            
+            .tick {
+                font-size: 18px !important;
+            }
+            
+            .rect-btn {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+            
+            div[style*="background-color: #fff0f7"] h1 {
+                font-size: 30px !important;
+            }
+            
+            .image-container img {
+                width: 90%;
+            }
+        }
+    </style>
 </head>
 <body>
   <!--ADDING MAIN HEADING-->
@@ -95,6 +281,7 @@
     <source src="video1.mp4" type="video/mp4">
   </video>
 </section>
+
 <!--ADDING PINK BOX WITH CONTENT AND POINTS WITH TICK SYMBOL-->
 <div style="background-color: #fff0f7;
             padding: 0;
@@ -167,6 +354,7 @@
       <button class="rect-btn">Yes, I'm Ready to Break the Cycle For Good!</button></div>
    <h4 style="margin-left: 480px; color: #666;">Instant Download. Secure Checkout. Risk Free - For 60 days</h4>
 </div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--LINKING JAVASCRIPT FILE-->
 <script src="script.js"></script>
 </body>
